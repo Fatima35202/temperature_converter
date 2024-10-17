@@ -24,7 +24,7 @@ def convert_temperature(value, from_unit, to_unit):
         elif to_unit == "Kelvin":
             return value + 273.15
         else:
-            return value
+            return value  # Celsius to Celsius
 
     elif from_unit == "Fahrenheit":
         if to_unit == "Celsius":
@@ -32,7 +32,7 @@ def convert_temperature(value, from_unit, to_unit):
         elif to_unit == "Kelvin":
             return (value - 32) * 5/9 + 273.15
         else:
-            return value
+            return value  # Fahrenheit to Fahrenheit
 
     elif from_unit == "Kelvin":
         if to_unit == "Celsius":
@@ -40,7 +40,7 @@ def convert_temperature(value, from_unit, to_unit):
         elif to_unit == "Fahrenheit":
             return (value - 273.15) * 9/5 + 32
         else:
-            return value
+            return value  # Kelvin to Kelvin
 
 # Convert button with custom styling
 if st.button("🔄 Convert"):
@@ -79,4 +79,4 @@ st.markdown(
 
 # Footer
 st.markdown("---")
-st.markdown("Made with ❤️ by [Your Name]")
+st.markdown("Made with ❤️ by Fatima Tanveer")
